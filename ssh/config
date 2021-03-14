@@ -17,6 +17,14 @@ HashKnownHosts no
 #Host hostname hostname.fqdn.com
 #    Hostname hostname.fqdn.com
 
+Host relay
+    HostName 192.168.0.161
+    User pi
+
+Host producer
+    HostName 192.168.0.162
+    User pi
+
 # Default
 Host *
     #User username
