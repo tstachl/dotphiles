@@ -1,7 +1,7 @@
 #
-# dotphiles : https://github.com/dotphiles/dotphiles
+# dotsync : https://github.com/dotphiles/dotsync
 #
-# Config for dotsync.
+# Config for dotsync
 #
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
@@ -16,15 +16,14 @@
 # dstfile will be '.$srcfile' by default (with path removed)
 #
 [files]
-# Uncomment examples below
 dotsyncrc
 #ack/ackrc
 #aptitude
-bin:bin
+#bin:bin
 #ctags/ctags
 #cmus
 #curl/curlrc
-git/gitconfig
+#git/gitconfig
 #git/gitignore
 #git/gitattributes
 #git/tigrc
@@ -34,16 +33,11 @@ git/gitconfig
 #input/editrc
 #input/inputrc
 #irssi
-#mpd/mpd.conf
 #mercurial/hgrc
 #mercurial/hgignore
 #mutt
 #mutt/muttrc
 #mutt/offlineimaprc
-#mysql/my.cnf
-#ncmpcpp/config
-#ncmpcpp/error.log
-#postgresql/psqlrc
 #python/pythonrc
 #python/pylintrc
 #rpm/rpmmacros
@@ -57,30 +51,27 @@ git/gitconfig
 #screen/screenrc
 #shell/hushlogin
 #shell/urlview
-ssh
+#ssh
 #subversion
 #task/task
 #task/taskrc
 #tmux/tmux.conf
 #tmux/tmuxinator
-vim/dotvim:.vim
-vim/vimrc
+#vim/dotvim:.vim
+#vim/vimrc
 #vim/gvimrc
 #wget/wgetrc
-zsh/fasdrc
-zsh/dotzsh:.zsh
-zsh/zlogin
-zsh/zlogout
-zsh/zprofile
-zsh/zshenv
-zsh/zshrc
+#zsh/fasdrc
+#zsh/dotzsh:.zsh
+#zsh/zlogin
+#zsh/zlogout
+#zsh/zprofile
+#zsh/zshenv
+#zsh/zshrc
 [endfiles]
 
-# Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-penguin                          git=NONE
-tstachl-ltm9                     git=penguin
 #host1.example.com               git=ANY                        files=custom/dotfile    #git repo, pull from anywhere and link a custom dotfile
 #host2.example.com               git=ANY                                                #git repo, pull from anywhere
 #host3.example.com               git=ANY                                                #git repo, pull from anywhere
