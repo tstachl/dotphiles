@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+rawurlencode() {
+  local string="${1}"
+  local strlen=${#string}
+  local encoded=""
+  local pos c o
+
+  for (( pos=0 ; pos<strlen ; pos++ )); do
+     c=${string:$pos:1}
+     case "$c" in
+        [-_.~a-zA-Z0-9] ) o="${c}" ;;
+        * )               printf -v o '%%%02x' "'$c"
+     esac
+     encoded+="${o}"
+  done
+  echo "${encoded}"    # You can either set a return variable (FASTER) 
+  REPLY="${encoded}"   #+or echo the result (EASIER)... or both... :p
+}
+
+username=$D7_USERNAME
+password=$D7_PASSWORD
+from=$(rawurlencode "Alert")
+content=$(rawurlencode "$@")
+to=$D7_PHONENUMBER
+
+query="?username=${username}&password=${password}&from=${from}&"
+query+="content=${content}&dlr-method=POST&"
+query+="dlr-url=https%3A%2F%2F4ba60af1.ngrok.io%2Freceive&dlr=yes&dlr-level=3&"
+query+="to=${to}"
+
+wget -nv --header="cache-control: no-cache" \
+   https://http-api.d7networks.com/send${query} > /dev/null 2>&1
+
+echo "Sent Alert \"${content}\" to \"${to}\""
