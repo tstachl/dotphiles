@@ -1,11 +1,1 @@
-#
-# dotphiles : https://github.com/dotphiles/dotphiles
-#
-# Allow access from the following keys
-#
-# Authors:
-#   Ben O'Hara <bohara@gmail.com>
-#
-
-# Add your ssh key here
-
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCo7dMYUdvyPLMEN2VaX9iKMznIxg/U+s4V6BlUUi6EpWuEtZRWOnyq+WdTO16eg9e5qxa0PIb6UubxelKtTvf/NGaGqtde0MTr1mA6Mpb0hmOUkAvWJ5jwO4Y9Iad6mVRKjT7uZZdW/G4+g9ncMnGACWEJx4pwW9HiiL4SbaDG9zAsFincr1d8TmkkdckZJIiI2tfk4SHOo8V1QiPD2sexk6mtXs0Wp6CIX7s/bugeVomqzVFUYEXo3jlZIut7vxOXeroB4fCxMedVVrKsmPZfW9gTdlbmpl884DaWuqZhJtFMIRgbDFlqE0XW9NTKPc51o3RaX75PRm274H9oCKmQSIwviFJFeGvq3yektq6X2dm8qUOWQQ3HlZa1MLC8hei/sbNxqYoj5EOh0Dls9s7TuMKmUYAF4ma61UouqGE+753cFde+EDvw7LEv90894UtPkRjfMd3w8uKy/iCJ6Fyfb9wJhsTZ0Ru2Kud00ZlTq2K/kIzNDOyJMudcMdK20ZmSsyb9l8h/na6YtUonS//TaxE6oTR6K9mo/sjb7YbKfh0uzvbwUttDihIzvaddDNkxjlhSMB65V1+qhDLE5+cLeRlHNpsdc3NMm6jgYK8bqTTJe8VUfCphco2jZUhXvoseGYrkevev+8QMuUMWJHXtajV8T1yBiYrEX9wVEO3uyQ== tstachl@salesforce.com

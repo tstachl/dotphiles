@@ -17,4 +17,4 @@ export DOTZSH="$HOME/.zsh"
 source "$DOTZSH/env.zsh"
 
 # Customize to your needs...
-
+LC_TERM_PROFILE=base16-monokai
