@@ -25,4 +25,4 @@ if has("user_commands")
 endif
 
 " Customize to your needs...
-LC_TERM_PROFILE=base16-monokai
+let LC_TERM_PROFILE=base16-monokai
